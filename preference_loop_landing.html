@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreferenceLoop - Clinical feedback for medical AI</title>
+    <meta name="description" content="10,000 licensed physicians comparing AI responses. Preference data for RLHF in 48 hours.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #0a0a0a;
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 120px 0;
+        }
+        
+        .logo {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 80px;
+            color: #0a0a0a;
+        }
+        
+        h1 {
+            font-size: 64px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 32px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #525252;
+            margin-bottom: 32px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: #737373;
+            margin-bottom: 48px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            color: #0a0a0a;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid #d4d4d4;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+        
+        .cta-button:hover {
+            border-color: #0a0a0a;
+        }
+        
+        /* Sections */
+        section {
+            padding: 100px 0;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 64px;
+            letter-spacing: -0.02em;
+        }
+        
+        .steps {
+            display: grid;
+            gap: 64px;
+        }
+        
+        .step {
+            max-width: 600px;
+        }
+        
+        .step-number {
+            font-size: 14px;
+            color: #a3a3a3;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        
+        .step h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        
+        .step p {
+            font-size: 16px;
+            color: #525252;
+            line-height: 1.6;
+        }
+        
+        /* Why section */
+        .why-content {
+            max-width: 600px;
+        }
+        
+        .why-content p {
+            font-size: 18px;
+            color: #525252;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 120px 0 80px;
+        }
+        
+        .contact h2 {
+            margin-bottom: 24px;
+        }
+        
+        .email {
+            font-size: 18px;
+            color: #0a0a0a;
+            margin-bottom: 48px;
+        }
+        
+        .email a {
+            color: #0a0a0a;
+            text-decoration: none;
+            border-bottom: 1px solid #d4d4d4;
+            transition: border-color 0.15s ease;
+        }
+        
+        .email a:hover {
+            border-bottom-color: #0a0a0a;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #e5e5e5;
+            font-size: 14px;
+            color: #a3a3a3;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .tagline {
+                font-size: 16px;
+            }
+            
+            h2 {
+                font-size: 28px;
+                margin-bottom: 48px;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .steps {
+                gap: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container">
+            <div class="logo">PreferenceLoop</div>
+            <h1>Clinical feedback for medical AI</h1>
+            <p class="subtitle">10,000 licensed physicians compare AI responses. You get preference data for RLHF in 48 hours.</p>
+            <p class="tagline">Response A or Response B. That's it.</p>
+            <a href="mailto:hello@preferenceloop.com" class="cta-button">Get in touch</a>
+        </div>
+    </div>
+    
+    <!-- How it works -->
+    <section>
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Send prompts</h3>
+                    <p>Upload medical prompts and two AI responses via API or CSV.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Doctors compare</h3>
+                    <p>Licensed physicians evaluate which response is clinically better.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Get data back</h3>
+                    <p>Receive preference pairs in 48 hours. JSON or CSV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why -->
+    <section>
+        <div class="container">
+            <h2>Why this matters</h2>
+            <div class="why-content">
+                <p>Medical AI hallucinates dangerous advice. RLHF trains models to be safer by learning from human preferences.</p>
+                <p>But RLHF needs expert feedback. Random crowdworkers can't judge clinical accuracy.</p>
+                <p>We connect 10,000 licensed physicians who make simple binary comparisons at scale.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <h2>Get started</h2>
+            <div class="email">
+                <a href="mailto:hello@preferenceloop.com">hello@preferenceloop.com</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            PreferenceLoop © 2025
+        </div>
+    </footer>
+</body>
+</html>
